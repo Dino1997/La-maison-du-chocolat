@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap");
+body {
+    margin: 0px;
+    padding: 0px;
+    .headerSection {
+        display: flex;
+        justify-content: space-around;
+        font-family: "Crete Round", serif;
+        color: silver;
+        h1 {
+            font-size: 35px;
+        }
+        span {
+            color: #ff69b4;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 35px;
+        }
+        li {
+            list-style-type: none;
+            margin: 0px 10px;
+            font-size: 17px;
+        }
+    }
+    .acceuilSection {
+        background-image: url(./images/main.jpg);
+        font-family: "Crete Round", serif;
+        height: 630px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        .acceuilContainer {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            .titlesection1 {
+                h2 {
+                    font-size: 55px;
+                    color: whitesmoke;
+                    align-items: center;
+                }
+                span {
+                    font-weight: lighter;
+                }
+                button {
+                    border-radius: 5px;
+                    border: none;
+                    background-color: #ff69b4;
+                    color: whitesmoke;
+                    padding: 17px 35px;
+                    font-size: 15px;
+                }
+            }
+            .divClick {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .part2Container {
+        font-family: "Crete Round", serif;
+        display: flex;
+    }
+    .souspart {
+        font-family: "Crete Round", serif;
+        text-align: center;
+        justify-content: space-around;
+        margin: 25px 50px;
+        font-size: 13px;
+        color: grey;
+    }
+    .cartesSection {
+        background-color: grey;
+        display: flex;
+        justify-content: space-around;
+        padding: 40px 80px;
+    }
+    .cartesContainer {
+        width: 460px;
+        height: 270px;
+        background-repeat: no-repeat;
+        border-radius: 7px;
+        margin: 5px;
+    }
+    .infoContainer {
+        width: 200px;
+    }
+    .carteInfo {
+        font-family: "Crete Round", serif;
+        width: 100%;
+        height: 270px;
+        background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.9);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px;
+        h3 {
+            color: grey;
+            font-weight: bold;
+        }
+        p {
+            color: grey;
+            font-size: 12px;
+        }
+        button {
+            background-color: #ff69b4;
+            color: whitesmoke;
+            border: none;
+            border-radius: 7px;
+            padding: 10px 25px;
+        }
+    }
+    #carte1 {
+        background-image: url(./images/article-image-1.jpg);
+    }
+    #carte2 {
+        background-image: url(./images/article-image-2.jpg);
+    }
+    .line {
+        height: 2px;
+        width: 80px;
+        background-color: grey;
+    }
+    .contact {
+        font-family: "Crete Round", serif;
+        color: grey;
+    }
+    .contactText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 150px;
+        h3 {
+            font-weight: bold;
+            font-size: 35px;
+            color: rgb(97, 96, 96);
+        }
+        .contactLine {
+            height: 2px;
+            width: 500px;
+            background-color: rgb(91, 91, 235);
+        }
+    }
+    .caseForm {
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+        align-items: center;
+        button {
+            background-color: #ff69b4;
+            color: whitesmoke;
+            border: none;
+            border-radius: 2px;
+            height: 22px;
+        }
+    }
+    .blk {
+        display: flex;
+        padding: 10px 15px;
+    }
+    .footer {
+        font-family: "Crete Round", serif;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(90, 89, 89);
+        .footerTitle {
+            display: flex;
+            justify-content: center;
+            color: whitesmoke;
+            font-size: 25px;
+            span {
+                color: hotpink;
+            }
+        }
+        .footerRights {
+            display: flex;
+            justify-content: center;
+            font-size: 10px;
+            color: grey;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .cartesSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headerSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .part2Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .caseForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
